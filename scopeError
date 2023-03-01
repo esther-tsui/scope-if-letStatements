@@ -1,0 +1,15 @@
+var animalNames = [
+  "Zebra": "Equus quagga",
+  "Giraffe": "Giraffa camelopardalis",
+  "Elephant": "Proboscidea elephantide"
+]
+ 
+if let giraffeSci = animalNames["Giraffe"] {
+  print("A giraffe is also known as a \(giraffeSci).")
+} else {
+  print("There is no value.")
+}
+ 
+print("\(giraffeSci) are herbivores.") 
+//line 13 will NOT get printed. 
+//Because the variable "giraffeSci" is NOT WITHIN the if-let statement, the whole if-let statement begins from line 7 and ends on line 11.
